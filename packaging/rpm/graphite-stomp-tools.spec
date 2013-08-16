@@ -1,11 +1,11 @@
-Name		: graphite-amqp-tools
+Name		: graphite-stomp-tools
 Version		: 0.1
-Release		: 4.20130621gitXXXXXXXX
-Summary		: Graphite AMQP Tools
+Release		: 1.20130816gitXXXXXXXX
+Summary		: Graphite STOMP Tools
 Group		: Applications/Internet
 
 Source0		: %{name}-%{version}.tar.gz
-URL		: https://github.com/bodgit/graphite-amqp-tools
+URL		: https://github.com/bodgit/graphite-stomp-tools
 License		: BSD
 Packager	: Matt Dainty <matt@bodgit-n-scarper.com>
 
@@ -23,8 +23,8 @@ BuildRequires	: bison
 BuildRequires	: pcre-devel
 
 %description
-Graphite AMQP Tools is a set of tools for getting Graphite data in and
-out of AMQP message brokers.
+Graphite STOMP Tools is a set of tools for getting Graphite data in and
+out of STOMP message brokers.
 
 %prep
 %setup -q
@@ -69,8 +69,5 @@ done
 %doc %{_mandir}/man8/graphite-*.8*
 
 %changelog
-* Tue Apr 30 2013 Matt Dainty <matt@bodgit-n-scarper.com> 0.1-1.20130430gitXXXXXXXX
-- Bump to version 0.1-1.20130430gitXXXXXXXX for STOMP support.
-
-* Fri Jun 22 2012 Matt Dainty <matt@bodgit-n-scarper.com> 0.1-1.20120623gitXXXXXXXX
-- Initial version 0.1-1.20120623gitXXXXXXXX.
+* Fri Aug 16 2013 Matt Dainty <matt@bodgit-n-scarper.com> 0.1-1.20130816gitXXXXXXXX
+- Initial version 0.1-1.20130816gitXXXXXXXX.

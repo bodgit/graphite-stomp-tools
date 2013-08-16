@@ -1,11 +1,11 @@
-graphite-amqp-tools
-===================
+graphite-stomp-tools
+====================
 
-_(A slight misnomer in that this branch actually supports STOMP)_
+(This was sat in a branch of https://github.com/bodgit/graphite-amqp-tools however as I'm using this in production it made sense to break it out as its own separate project.)
 
-Basically gluing https://github.com/bodgit/libevent-stomp and https://github.com/bodgit/libevent-graphite together to make the following daemons that should be reasonably efficient and have low memory usage:
+Basically gluing libevent2, https://github.com/bodgit/libevent-stomp and https://github.com/bodgit/libevent-graphite together to make the following daemons that should be reasonably efficient and have low memory usage:
 
-* graphite-enqueue - provides the graphite TCP line receiver protocol and forwards all received messages on to a given STOMP destination. Uses libevent2 to handle multiple clients simultaneously.
+* graphite-enqueue - provides the graphite TCP line receiver protocol and forwards all received messages on to a given STOMP destination.
 
 * graphite-dequeue - does the opposite, receives messages from a given STOMP source and posts them on to a given graphite TCP line receiver.
 
